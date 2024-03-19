@@ -1,0 +1,46 @@
+@import'../helpers/variables';
+
+// start header and navbar
+.header{
+    .navbar{
+      border-bottom: 1px solid black;
+      z-index: 3;
+      width: 100% ;
+      background-color:black;
+      .navbar-brand{
+        color: white;
+        font-size: 30px;
+        padding: 0px 13px;
+        text-transform: capitalize;
+        span{
+          color: $maincolor;
+          transform: rotate(30deg);
+          padding: 0px 12px;
+          display: inline-block;
+
+        }
+      }
+      .collapse{
+        li{
+          font-size: 17px;
+          padding: 0px 15px;
+          font-weight: bold;
+          color: white;
+          text-transform: capitalize;
+          }
+          a{
+            color: white!important;
+            .active{
+              border-bottom: solid 5px $maincolor;
+          }}
+        }
+      }
+    }
+     
+.underline-from-center:focus:before, .hvr-underline-from-center:hover:before,.underline-from-center:active:before{
+       background-color: $maincolor;
+       color: $maincolor;
+     }
+     .hvr-underline-from-center:before{
+       background-color: $maincolor;
+     }

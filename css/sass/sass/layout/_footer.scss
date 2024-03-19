@@ -1,0 +1,96 @@
+@import '../helpers/variables';
+.footer{
+    background-color: black;
+    color: white;
+    margin-bottom: 0px !important;
+}
+.footer .ayad-inc h2{
+    font-style: normal;
+    font-size: 30px;
+    /* padding: 5px; */
+    margin: 20px 0px;
+    text-transform: uppercase;
+    position: relative;
+    top: -5px;
+    color: $maincolor;
+    }
+    .footer .ayad-inc{
+        margin-bottom: 7px;
+    }
+    .footer .ayad-inc span{
+        color: var(--secondcolor);
+    }
+    .footer .ayad-inc p{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 1.2;
+        /* justify-items: left; */
+    text-align:left ;
+    }
+    .footer .ayad-inc a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 17px;
+        font-style: normal;
+        color: $mainsecondcolor;
+    
+    }
+    .footer .ayad-inc a::before{
+        content: "\f0a9";
+        font-family: FontAwesome;
+        margin-right: 3px;
+    }
+    .footer .helpful h2,
+    .footer .links h2{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold;
+        /* padding: 4px; */
+        text-align:left;
+        margin-bottom: 12px;
+        margin-top: 15px;
+        color: $maincolor;
+    }
+    
+    
+    .footer .helpful li{
+        /* position: absolute; */
+        font-size: 15px;
+        font-style:normal;
+        font-weight: bold;
+        line-height: 2.4;
+        
+    }
+    .footer .helpful li::before{
+        content: "\f061";
+        font-family:FontAwesome;
+        margin-right: 5px;
+        position: relative;
+    }
+    .footer .links ul li{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .footer .links ul li:first-of-type{
+     margin-top: 20px;}
+    .footer{
+        margin-bottom: 30px;
+    }
+    .last{
+        border-top: 2px solid grey;
+    }
+    .last .copyrightt p{
+        margin-top: 20px;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+    .icons ul li{
+        display: inline-block;
+        margin-left: 15px;
+        color: var(--secondcolor);
+        font-size: 20px;
+        margin-top: 20px;
+    }

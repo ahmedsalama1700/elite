@@ -1,0 +1,367 @@
+ @import "../helpers/variables";
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+width: 100%;
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.mySwiper{
+  .swiper-slide{
+   
+    .words-down{
+      position: absolute;
+      top: 50%;
+      left: 46%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      p{
+        font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+
+      }
+      button{
+        border: none;
+        font-size: 30px;
+        background-color: $maincolor;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Pangolin', cursive;
+
+      }
+    }
+  }
+}
+
+
+.best-services{
+  margin-top: 70px;
+  // margin-bottom: 2px;
+  .wordy{
+    color: $maincolor;
+    font-size: 40px;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 8%;
+      height: 6px;
+      background-color: $mainsecondcolor;
+      top: 53px;
+      color: $mainsecondcolor;
+    }
+  }
+  
+.cards{
+    border: #ccc solid 1px;
+    box-shadow: 0 0 6px #ccc;
+    min-height: 250px;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+    padding: 12px;
+    &::after{
+      content: '';
+      border-bottom: 50px $maincolor solid;
+      border-right: 50px transparent solid;
+      left: 0px;
+      bottom: 0px;
+      position: absolute;
+    }
+    
+
+    
+    i{
+      font-size: 40px;
+      color:$maincolor;
+      margin-top: 10px;
+    }
+    p{
+      margin-top: 10px;
+      margin-bottom: 1rem;
+    }
+    h2{
+      margin-top: 20px;
+    }
+  }
+}
+.update{
+  margin: 60px 0px 60px 0px;
+  .main-word{
+    h3{
+      &::before{
+        content: '';
+        background-color: $mainsecondcolor;
+        position: absolute;
+        width: 8%;
+        height: 5px;
+        top: 34px;
+      }
+    }
+    p{
+      color: #5d5d5d;
+    }
+  }
+  .main-button{
+    button{
+      float: right;
+      border: solid $maincolor 2px;
+      padding: 10px 30px;
+     font-size: 25px;
+     text-transform: capitalize;
+     font-weight: bold;
+     &:hover{
+      background-color: $maincolor;
+      color: white;
+    }
+    }
+  }
+}
+.cardss{
+  margin: 0px 0px 70px 0px;
+  overflow: hidden;
+  
+  .card-info{
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: -webkit-center;
+
+
+    .card{
+      overflow: hidden;
+
+    box-shadow: 0px 0px 10px 0px #ccc;
+              transition: 1.2s all ease-in-out;
+
+      &:hover{
+        // .for-rent{
+        //   display: none;
+        //   transition: 1.2s all ease-in-out;
+        // }
+        .hovery{display: block;
+          
+        }
+      }
+      .hovery{
+        background-color: rgba(0, 0, 0, 0.712);
+        position: absolute;
+        min-height: 190px;
+        top:0px;
+        width: 100%;
+        display: none;
+        span{
+          display: block;
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 20px;
+          margin-top: 27px;
+          color: white;
+          i{
+            color: $maincolor;
+          }
+        }
+      }
+      img{
+        height: 190px;
+       
+      }
+      .for-rent{
+        position: absolute;
+        left: 0px;
+        color: white;
+        background-color: #ffc107;
+        width: 100px;
+        height: 32px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .card-body{
+        h5{text-align: center;}
+        p{
+          // display: inline-block;
+          color:$pcolor;
+          font-weight: bold;
+          text-transform: capitalize;
+          margin-top: 8px;
+          float: left;
+        }
+        a{
+          float: right;
+          
+        }
+      }
+    }
+  }
+}
+
+.for-rent{
+            transition: .3s all ease-in-out;
+
+}
+
+.card:hover .for-rent{
+  margin-left: -100px;
+}
+
+.btn-primary{
+  background-color: $maincolor !important;
+  border-color: $maincolor;
+}
+// start about-us
+.about-us{
+  margin: 30px 0px 70px 0px;
+}
+// end about-us
+@media(max-width:440px){
+  .update{
+    .main-update{
+    .col-4,.col-8{
+      max-width: inherit;
+      flex: inherit;
+    }
+    .col-4{
+      float: inherit;
+      text-align: center;
+      button{
+        float:inherit;
+      }
+    }
+    
+  }
+  }
+}
+// about-us
+.about-us{
+  position: relative;
+  margin: 60px 0;
+  h1{
+&::before{
+  content: '';
+  width: 107px;
+  position: absolute;
+  height: 5px;
+  top: 45px;
+  background-color: $mainsecondcolor;
+}
+  }
+  p{
+    color: grey;
+    margin-top: 30px;
+
+  }
+  button{
+    margin-top: 20px;
+    border:none ;
+    background-color: $maincolor;
+    color: white;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+  }
+}
+// end 
+//stat ouragents
+.our-agent{
+  @media (max-width:$phone ) {width: 100%;}
+  margin: 60px 0px;
+  position: relative;
+  .container{
+    h2{
+      margin-bottom: 40px;
+      &::before{
+        content: '';
+        width: 55px;
+        position: absolute;
+        height: 4px;
+        top: 43px;
+        background-color: $mainsecondcolor;
+      }
+    }
+  }
+  .card-infoo{
+    margin-bottom: 15px;
+    text-align:-webkit-center;
+    
+    .card{
+      img{
+        width: 286px !important;
+        height: 200px !important;
+      }
+    }
+    .card-body{
+      h5{
+        color: $maincolor;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      a{
+        margin-left: 10px;
+        :hover{
+          background-color: $mainsecondcolor;
+          color: white;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+        }
+        i{
+          font-size: 20px;
+          line-height: 50px;
+          
+          }
+        
+      }
+      
+    }
+  }
+}
+.what-they-say{
+  margin: 50px 0px;
+  position: relative;
+  h2{
+    margin: 40px 0px;
+    &::before{
+      content: '';
+      width: 55px;
+      position: absolute;
+      height: 4px;
+      top: 43px;
+      background-color: $mainsecondcolor;
+    }
+  }
+  img{
+    text-align: -webkikt-center;
+  };
+  p{
+    color: grey;
+    margin-top: 55px;
+    font-weight: bold;
+  }
+}
+.navbar-light .navbar-toggler {
+  color: white;
+  background-color:$maincolor;}
